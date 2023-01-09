@@ -6,7 +6,7 @@ If a project has visuals done on Tableau, it will have 🔵	beside its name, oth
 Tableau page: https://public.tableau.com/app/profile/sebastian.tampu
 
 PROJECTS:
-1. Housing Sales Analysis 🔵 
+1. Housing Sales Analysis 🔴
   - Looked a dataset of sales of houses in Australia between 2007 and 2019. 
   - Took a look at sale numbers by year, postalcode, and other factors.
 
