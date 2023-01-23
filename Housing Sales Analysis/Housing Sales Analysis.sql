@@ -51,10 +51,10 @@ ORDER BY COUNT(EXTRACT(YEAR FROM datesold)) DESC;
 
 
 /*
-Next, we will see which postal codes had the highest numbers
+Next, we will see which postal codes had the highest single price
 throughout the years. This can be done through window functions.
-1. Add the prices for a certain postal code, during a certain year.
-2. Order by year, followed by top 6 postal codes within each year.
+1. The prices for a certain postal code, during a certain year will be sorted.
+2. The top 5 property values will then be chosen, only one per postal code.
 */
 
 CREATE TABLE new_sales AS
@@ -71,5 +71,5 @@ FROM(
     SELECT *, ROW_NUMBER() OVER (PARTITION BY year ORDER BY price DESC) rank_num
     FROM new_sales
     WHERE ranking < 2) r
-WHERE r.rank_num BETWEEN 1 AND 6; 
---only allowed for the top 6 postal codes to be returned
+WHERE r.rank_num BETWEEN 1 AND 5; 
+--only allowed for the top 5 postal codes to be returned
