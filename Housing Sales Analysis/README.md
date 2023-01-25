@@ -2,6 +2,8 @@
 
 Here we take a look at the housing market from 2007 to 2019 of an undisclosed Australian city (no information provided in the data unfortunately). Specifically, the growth of sales and the trends throughout the years is of interest, as well as the properties sold in each postal, by quantity and by price.
 
+Original data taken from: https://www.kaggle.com/datasets/htagholdings/property-sales
+
 ## Files Included:
 
 - 'Housing Sales Analysis.sql' which has all the queries used to generate the tables present in this folder.
